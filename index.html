@@ -2723,7 +2723,7 @@ var HKEY='qrgrove.history.v1';
 var hist=[];
 try{var raw=store(HKEY);if(raw){hist=JSON.parse(raw).filter(function(e){return e&&typeof e.url==='string'&&parseLink(e.url).href;});}}catch(e){hist=[];}
 function saveHist(){store(HKEY,JSON.stringify(hist.slice(0,24)));}
-var SAMPLE={id:'sample',url:'https://example.com',host:'example.com',variant:0,season:'spring',sw:[0,0,0],sample:true};
+var SAMPLE={id:'sample',url:'https://thisisvivek.in',host:'thisisvivek.in',variant:0,season:'spring',sw:[0,0,0],sample:true};
 /* Share links: link + season + color + pattern packed into the part of the address after #.
    Set SHARE_BASE to your own address when you launch, for example 'https://yourdomain.com/'.
    Leave it empty to use whatever address this page is opened from. */
