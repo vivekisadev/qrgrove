@@ -2727,7 +2727,7 @@ var SAMPLE={id:'sample',url:'https://example.com',host:'example.com',variant:0,s
 /* Share links: link + season + color + pattern packed into the part of the address after #.
    Set SHARE_BASE to your own address when you launch, for example 'https://yourdomain.com/'.
    Leave it empty to use whatever address this page is opened from. */
-var SHARE_BASE='https://claude.ai/artifact/VtpKUNtgWuvfaDZW3nkfLt';
+var SHARE_BASE='https://grove.thisisvivek.in';
 var B32='abcdefghijklmnopqrstuvwxyz234567';
 function b32enc(u8){var out='',bits=0,val=0;for(var i=0;i<u8.length;i++){val=((val<<8)|u8[i])&0xffffff;bits+=8;while(bits>=5){out+=B32.charAt((val>>>(bits-5))&31);bits-=5;}}if(bits>0)out+=B32.charAt((val<<(5-bits))&31);return out;}
 function b32dec(str){var bits=0,val=0,out=[];for(var i=0;i<str.length;i++){var k=B32.indexOf(str.charAt(i));if(k<0)return null;val=((val<<5)|k)&0xffffff;bits+=5;if(bits>=8){out.push((val>>>(bits-8))&255);bits-=8;}}return new Uint8Array(out);}
